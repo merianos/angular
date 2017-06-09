@@ -1,509 +1,439 @@
 {
-  "TopBar": [
-    {
+  "TopBar": [{
+    "url": "features",
+    "title": "Χαρακτηριστικά"
+  }, {
+    "url": "docs",
+    "title": "Εγχειρίδια"
+  }, {
+    "url": "resources",
+    "title": "Πηγές"
+  }, {
+    "url": "events",
+    "title": "Εκδηλώσεις"
+  }],
+
+  "TopBarNarrow": [{
+    "title": "Σχετικά με το Angular",
+    "children": [{
       "url": "features",
-      "title": "Features"
-    },
-    {
-      "url": "docs",
-      "title": "Docs"
-    },
-    {
+      "title": "Χαρακτηριστικά"
+    }, {
       "url": "resources",
-      "title": "Resources"
-    },
-    {
+      "title": "Πηγές"
+    }, {
       "url": "events",
-      "title": "Events"
-    }
-  ],
+      "title": "Εκδηλώσεις"
+    }]
+  }],
 
-  "TopBarNarrow": [
-    {
-      "title": "About Angular",
-      "children": [
-        {
-          "url": "features",
-          "title": "Features"
-        },
-        {
-          "url": "resources",
-          "title": "Resources"
-        },
-        {
-          "url": "events",
-          "title": "Events"
-        }
-      ]
-    }
-  ],
-
-  "SideNav": [
-    {
+  "SideNav": [{
       "url": "docs",
-      "title": "Docs",
-      "tooltip": "Angular Documentation",
+      "title": "Εγχειρίδια",
+      "tooltip": "Εγχειρίδια του Angular",
       "hidden": true
     },
 
     {
-      "title": "Getting Started",
-      "tooltip": "A gentle introduction to Angular.",
-      "children": [
-        {
+      "title": "Κάνοντας την αρχή",
+      "tooltip": "Μια ευγενική εισαγωγή στο Angular.",
+      "children": [{
           "url": "guide/quickstart",
-          "title": "Basic Quickstart",
-          "tooltip": "A quick look at an Angular app without tooling."
+          "title": "Βασικός Οδηγός Εκκίνησης",
+          "tooltip": "Μια γρήγορη ματιά στο Angular χωρίς την εγκατάσταση εργαλείων."
         },
 
         {
           "url": "guide/cli-quickstart",
-          "title": "CLI Quickstart",
-          "tooltip": "A quick look at an Angular app built with the Angular CLI."
-        }
-    ]},
-
-    {
-      "title": "Tutorial",
-      "tooltip": "The Tour of Heroes tutorial takes you through the steps of creating an Angular application in TypeScript.",
-      "children": [
-        {
-          "url": "tutorial",
-          "title": "1. Introduction",
-          "tooltip": "Part 1: Introduction to the Tour of Heroes tutorial"
-        },
-        {
-          "url": "tutorial/toh-pt1",
-          "title": "2. The Hero Editor",
-          "tooltip": "Part 2: Build a simple hero editor"
-        },
-        {
-          "url": "tutorial/toh-pt2",
-          "title": "3. Master/Detail",
-          "tooltip": "Part 3: Build a master/detail page with a list of heroes."
-        },
-        {
-          "url": "tutorial/toh-pt3",
-          "title": "4. Multiple Components",
-          "tooltip": "Part 4: Refactor the master/detail view into separate components."
-        },
-        {
-          "url": "tutorial/toh-pt4",
-          "title": "5. Services",
-          "tooltip": "Part 5: Create a reusable service to manage hero data."
-        },
-        {
-          "url": "tutorial/toh-pt5",
-          "title": "6. Routing",
-          "tooltip": "Part 6: Add the Angular router and navigate among the views."
-        },
-        {
-          "url": "tutorial/toh-pt6",
-          "title": "7. HTTP",
-          "tooltip": "Part 7: Use HTTP to retrieve and save hero data."
+          "title": "Οδηγός Εκκίνησης με την γραμμή εντολών",
+          "tooltip": "Μια γρήγορη ματιά σε μια εφαρμογή Angular χτισμένη με τη γραμμή εντολών Angular."
         }
       ]
     },
 
     {
-      "title": "Fundamentals",
-      "tooltip": "The fundamentals of Angular",
+      "title": "Μαθήματα",
+      "tooltip": "Η ξενάγηση στο μάθημα \"Ήρωες\" θα σας πάει μέσω των βημάτων δημιουργίας μιας εφαρμογής Angular με TypeScript.",
+      "children": [{
+        "url": "tutorial",
+        "title": "1. Εισαγωγή",
+        "tooltip": "Μέρος 1: Εισαγωγή στην ξενάγηση του μαθήματος \"Ήρωες\""
+      }, {
+        "url": "tutorial/toh-pt1",
+        "title": "2. Ο επεξεργαστής Ηρώων",
+        "tooltip": "Μέρος 2: Δημιουργία ενός απλού επεξεργαστή Ηρώων"
+      }, {
+        "url": "tutorial/toh-pt2",
+        "title": "3. Κεντρική/Λεπτομερής σελίδα",
+        "tooltip": "Μέρος 3: Δημιουργία κεντρικής/λεπτομερούς σελίδας με μια λίστα από ήρωες."
+      }, {
+        "url": "tutorial/toh-pt3",
+        "title": "4. Πολλαπλά συστατικά",
+        "tooltip": "Μέρος 4:  Αναδιοργάνωση της κεντρικής/λεπτομερούς προβολής σε διαχωρισμένα συστατικά."
+      }, {
+        "url": "tutorial/toh-pt4",
+        "title": "5. Υπηρεσίες",
+        "tooltip": "Μέρος 5: Δημιουργία επαναχρησιμοποιούμενων υπηρεσιών για την διαχείριση των δεδομένων των ηρώων."
+      }, {
+        "url": "tutorial/toh-pt5",
+        "title": "6. Διαδρομές",
+        "tooltip": "Μέρος 6: Προσθήκη του Angular router και πλοήγηση μεταξύ των προβολών."
+      }, {
+        "url": "tutorial/toh-pt6",
+        "title": "7. HTTP",
+        "tooltip": "Μέρος 7: Χρήση του HTTP για την ανάκτηση και αποθήκευση των δεδομένων των ηρώων."
+      }]
+    },
+
+    {
+      "title": "Βασικές αρχές",
+      "tooltip": "Οι βασικές αρχές του Angular",
       "children": [
 
         {
           "url": "guide/animations",
           "title": "Animations",
-          "tooltip": "A guide to Angular's animation system."
+          "tooltip": "Ένας οδηγός στο σύστημα Angular's animation."
         },
 
         {
-          "title": "Angular Modules",
-          "tooltip": "Learn how directives modify the layout and behavior of elements.",
-          "children": [
-            {
-              "url": "guide/appmodule",
-              "title": "The Root AppModule",
-              "tooltip": "Tell Angular how to construct and bootstrap the app in the root \"AppModule\"."
-            },
-            {
-              "url": "guide/ngmodule",
-              "title": "NgModule",
-              "tooltip": "Define application modules with @NgModule."
-            },
-            {
-              "url": "guide/ngmodule-faq",
-              "title": "Angular Module FAQs",
-              "tooltip": "Answers to frequently asked questions about @NgModule."
-            }
-        ]},
+          "title": "Μονάδες του Angular",
+          "tooltip": "Μάθετε πως οι οδηγίες αλλάζουν την δομή και την συμπεριφορά των στοιχείων.",
+          "children": [{
+            "url": "guide/appmodule",
+            "title": "Η μονάδα διαδρομών AppModule",
+            "tooltip": "Πείτε στο Angular πως να κατασκευάσει και να εκκίνηση την εφαρμογή στο κεντρικό \"AppModule\"."
+          }, {
+            "url": "guide/ngmodule",
+            "title": "NgModule",
+            "tooltip": "Δήλωση μονάδων εφαρμογής με το @NgModule."
+          }, {
+            "url": "guide/ngmodule-faq",
+            "title": "Συχνές ερωτήσεις για τις μονάδες του Angular",
+            "tooltip": "Απαντήσεις σε συχνές ερωτήσεις σχετικά με το @NgModule."
+          }]
+        },
 
         {
           "url": "guide/architecture",
-          "title": "Architecture",
-          "tooltip": "The basic building blocks of Angular applications."
+          "title": "Αρχιτεκτονική",
+          "tooltip": "Τα βασικά δομικά στοιχεία των εφαρμογών Angular."
         },
 
         {
-          "title": "Components",
-          "tooltip": "Components present information to users and collect their input.",
-          "children": [
-            {
-              "url": "guide/displaying-data",
-              "title": "Displaying Data",
-              "tooltip": "Property binding helps show app data in the UI."
-            },
-            {
-              "url": "guide/template-syntax",
-              "title": "Template Syntax",
-              "tooltip": "Learn how to write templates that display data and consume user events with the help of data binding."
-            },
-            {
-              "url": "guide/lifecycle-hooks",
-              "title": "Lifecycle Hooks",
-              "tooltip": "Angular calls lifecycle hook methods on directives and components as it creates, changes, and destroys them."
-            },
-            {
-              "url": "guide/component-interaction",
-              "title": "Component Interaction",
-              "tooltip": "Share information between different directives and components."
-            },
-            {
-              "url": "guide/component-styles",
-              "title": "Component Styles",
-              "tooltip": "Learn how to apply CSS styles to components."
-            },
-            {
-              "url": "guide/dynamic-component-loader",
-              "title": "Dynamic Components",
-              "tooltip": "Load components dynamically."
-            },
-            {
-              "url": "guide/pipes",
-              "title": "Pipes",
-              "tooltip": "Pipes transform displayed values within a template."
-            }
-          ]
+          "title": "Συστατικά (Components)",
+          "tooltip": "Τα συστατικά παρουσιάζουν πληροφορίες στους χρήστες και συλλέγουν τα δεδομένα τους.",
+          "children": [{
+            "url": "guide/displaying-data",
+            "title": "Προβολή δεδομένων",
+            "tooltip": "Η σύνδεση ιδιοτήτων βοηθάει στην προβολή δεδομένων στην διεπαφή χρήστη (UI)."
+          }, {
+            "url": "guide/template-syntax",
+            "title": "Συντακτικό Προτύπων (Templates)",
+            "tooltip": "Μάθετε πως να γράφετε πρότυπα που προβάλουν δεδομένα και καταναλώνουν τις αντιδράσεις των χρηστών με την βοήθεια της σύνδεσης των δεδομένων."
+          }, {
+            "url": "guide/lifecycle-hooks",
+            "title": "Άγκιστρα Κύκλου Ζωής",
+            "tooltip": "Το Angular καλεί μεθόδους άγκιστρα του κύκλου ζωής σε οδηγίες και συστατικά καθώς τα δημιουργεί, αλλάζει, και τα καταστρέφει."
+          }, {
+            "url": "guide/component-interaction",
+            "title": "Αλληλεπίδραση συστατικών",
+            "tooltip": "Μοιραστείτε πληροφορίες μεταξύ διαφορετικών οδηγιών και συστατικών."
+          }, {
+            "url": "guide/component-styles",
+            "title": "Μορφοποίηση Συστατικών",
+            "tooltip": "Μάθετε πως να εφαρμόζετε μορφοποιήσεις CSS στα συστατικά."
+          }, {
+            "url": "guide/dynamic-component-loader",
+            "title": "Δυναμικά Συστατικά",
+            "tooltip": "Δυναμικό φόρτωμα συστατικών."
+          }, {
+            "url": "guide/pipes",
+            "title": "Αγωγοί (Pipes)",
+            "tooltip": "Οι αγωγοί μεταβάλουν τις προβεβλημένες τιμές μέσα σε ένα πρότυπο."
+          }]
         },
 
         {
-          "title": "Dependency Injection",
-          "tooltip": "Dependency Injection: creating and injecting services",
-          "children": [
-            {
-              "url": "guide/dependency-injection",
-              "title": "Dependency Injection",
-              "tooltip": "Angular's dependency injection system creates and delivers dependent services \"just-in-time\"."
-            },
-            {
-              "url": "guide/hierarchical-dependency-injection",
-              "title": "Hierarchical Injectors",
-              "tooltip": "Angular's hierarchical dependency injection system supports nested injectors in parallel with the component tree."
-            },
-            {
-              "url": "guide/dependency-injection-in-action",
-              "title": "DI in Action",
-              "tooltip": "Techniques for Dependency Injection."
-            }
-          ]
+          "title": "Έγχυση εξαρτήσεων",
+          "tooltip": "Έγχυση εξαρτήσεων: δημιουργία και έγχυση υπηρεσιών",
+          "children": [{
+            "url": "guide/dependency-injection",
+            "title": "Έγχυση εξαρτήσεων",
+            "tooltip": "Το σύστημα έγχυσης εξαρτήσεων του Angular δημιουργεί και παραδίδει εξαρτώμενες υπηρεσίες \"στην ώρα τους\"."
+          }, {
+            "url": "guide/hierarchical-dependency-injection",
+            "title": "Ιεραρχική έγχυση",
+            "tooltip": "Το ιεραρχικό σύστημα έγχυσης εξαρτήσεων του Angular υποστηρίζει ενθυλακωμένους εγχυτές σε παραλληλία με το δέντρο συστατικών."
+          }, {
+            "url": "guide/dependency-injection-in-action",
+            "title": "Έγχυση εξαρτήσεων (DI) στην πράξη",
+            "tooltip": "Τεχνικές για έγχυση εξαρτήσεων."
+          }]
         },
 
         {
-          "title": "Directives",
-          "tooltip": "Learn how directives modify the layout and behavior of elements.",
-          "children": [
-            {
-              "url": "guide/attribute-directives",
-              "title": "Attribute Directives",
-              "tooltip": "Attribute directives attach behavior to elements."
-            },
-            {
-              "url": "guide/structural-directives",
-              "title": "Structural Directives",
-              "tooltip": "Structural directives manipulate the layout of the page."
-            }
-          ]
+          "title": "Οδηγίες ( directives )",
+          "tooltip": "Μάθετε πως οι οδηγίες μεταβάλουν την δομή και την συμπεριφορά των στοιχείων.",
+          "children": [{
+            "url": "guide/attribute-directives",
+            "title": "Οδηγίες Ιδιοτήτων",
+            "tooltip": "Οι οδηγίες ιδιοτήτων εφαρμόζουν συμπεριφορά σε στοιχεία."
+          }, {
+            "url": "guide/structural-directives",
+            "title": "Δομικές Οδηγίες",
+            "tooltip": "Οι δομικές οδηγίες χειρίζονται την δομή της σελίδας."
+          }]
         },
 
         {
           "url": "guide/http",
           "title": "HTTP",
-          "tooltip": "Use HTTP to talk to a remote server."
+          "tooltip": "Χρησιμοποιήστε το HTTP για να μιλήσετε σε απομακρυσμένους εξυπηρετητές."
         },
 
         {
           "url": "guide/i18n",
-          "title": "Internationalization (i18n)",
-          "tooltip": "Translate the app's template text into multiple languages."
+          "title": "Διεθνοποίηση (i18n)",
+          "tooltip": "Μετάφραση των πρότυπων της εφαρμογής σε πολλαπλές γλώσσες."
         },
 
         {
           "url": "guide/router",
-          "title": "Routing & Navigation",
-          "tooltip": "Discover the basics of screen navigation with the Angular Router."
+          "title": "Διαδρομές & Πλοήγηση",
+          "tooltip": "Εξερευνήστε τα βασικά της πλοήγησης οθόνης με το Angular Router."
         },
 
         {
-          "title": "User Input",
-          "tooltip": "User Input",
-          "children": [
-            {
+          "title": "Εισαγωγή χρήστη",
+          "tooltip": "Εισαγωγή χρήστη",
+          "children": [{
               "url": "guide/user-input",
-              "title": "User Input",
-              "tooltip": "User input triggers DOM events. We listen to those events with event bindings that funnel updated values back into our components and models."
+              "title": "Εισαγωγή χρήστη",
+              "tooltip": "Η εισαγωγή του χρήστη ενεργοποιεί συμβάντα στο DOM. Ακούμε αυτά τα συμβάντα με την σύνδεση συμβάντων και διοχετεύουμε αυτές τις τιμές πίσω στα συστατικά μας και στα μοντέλα μας."
             },
 
             {
               "url": "guide/forms",
-              "title": "Template-driven Forms",
-              "tooltip": "A form creates a cohesive, effective, and compelling data entry experience. An Angular form coordinates a set of data-bound user controls, tracks changes, validates input, and presents errors."
+              "title": "Φόρμες οδηγούμενες από πρότυπα",
+              "tooltip": "Μία φόρμα δημιουργεί μια συνεκτική, αποτελεσματική και συναρπαστική εμπειρία εισαγωγής δεδομένων. Μια φόρμα στο Angular, συντονίζει το σύνολο των στοιχείων της φόρμα που είναι συνδεδεμένα με δεδομένα, παρακολουθεί αλλαγές, πιστοποιεί τα δεδομένα και παρουσιάζει τα σφάλματα."
             },
 
             {
               "url": "guide/reactive-forms",
-              "title": "Reactive Forms",
-              "tooltip": "Create a reactive form using FormBuilder, groups, and arrays."
-            },
-            {
+              "title": "Διαδραστικές Φόρμες",
+              "tooltip": "Δημιουργήστε διαδραστικές φόρμες χρησιμοποιώντας FormBuilder, σύνολα, και συστοιχίες (arrays)."
+            }, {
               "url": "guide/form-validation",
-              "title": "Form Validation",
-              "tooltip": "Validate user's form entries."
-            },
-            {
+              "title": "Επικύρωση φόρμας",
+              "tooltip": "Επικύρωση των δεδομένων που έχει εισάγει ο χρήστης."
+            }, {
               "url": "guide/dynamic-form",
-              "title": "Dynamic forms",
-              "tooltip": "Render dynamic forms with FormGroup."
+              "title": "Δυναμικές φόρμες",
+              "tooltip": "Δημιουργήστε δυναμικές φόρμες με το FormGroup."
             }
-        ]}
-    ]},
+          ]
+        }
+      ]
+    },
 
     {
-      "title": "Techniques",
-      "tooltip": "Techniques for putting Angular to work in your environment",
+      "title": "Τεχνικές",
+      "tooltip": "Τεχνικές για να βάλετε το Angular να δουλέψει στο δικό σας περιβάλλον",
       "children": [
 
         {
           "url": "guide/security",
-          "title": "Security",
-          "tooltip": "Developing for content security in Angular applications."
+          "title": "Ασφάλεια",
+          "tooltip": "Ανάπτυξη για ασφαλές περιεχόμενο σε μια εφαρμογή Angular."
         },
 
         {
           "url": "guide/set-document-title",
-          "title": "Set the document tab title",
-          "tooltip": "Set the browser tab title dynamically with the Angular Title service"
+          "title": "Ορισμός του τίτλου του εγγράφου",
+          "tooltip": "Ορίστε τον τίτλο της σελίδας δυναμικά με την υπηρεσία τίτλου του Angular."
         },
 
         {
-          "title": "Setup & Deployment",
-          "tooltip": "Setup and Deployment",
-          "children": [
-            {
+          "title": "Εγκατάσταση & Δημοσίευση",
+          "tooltip": "Εγκατάσταση & Δημοσίευση",
+          "children": [{
               "url": "guide/setup",
-              "title": "Setup for local development",
-              "tooltip": "Install the Angular QuickStart seed for faster, more efficient development on your machine."
-            },
-            {
+              "title": "Εγκατάσταση για τοπική ανάπτυξη",
+              "tooltip": "Εγκατάσταση του Angular QuickStart για ταχύτερη, ποιο αποτελεσματική ανάπτυξη στον υπολογιστή σας."
+            }, {
               "url": "guide/setup-systemjs-anatomy",
-              "title": "Anatomy of the Setup",
-              "tooltip": "Inside the local development environment for SystemJS."
-            },
-            {
+              "title": "Ανατομία της εγκατάστασης",
+              "tooltip": "Μέσα στο τοπικό περιβάλλον ανάπτυξης για το SystemJS."
+            }, {
               "url": "guide/browser-support",
-              "title": "Browser Support",
-              "tooltip": "Browser support and polyfills guide."
-            },
-            {
+              "title": "Υποστήριξη Περιηγητών Διαδικτύου",
+              "tooltip": "Υποστήριξη Περιηγητών Διαδικτύου και οδηγός polyfills."
+            }, {
               "url": "guide/npm-packages",
-              "title": "Npm Packages",
-              "tooltip": "Recommended npm packages, and how to specify package dependencies."
+              "title": "Πακέτα Npm",
+              "tooltip": "Συνιστώμενα πακέτα npm, και πως να ορίσετε εξαρτήσεις πακέτων."
             },
 
             {
               "url": "guide/typescript-configuration",
-              "title": "TypeScript Configuration",
-              "tooltip": "TypeScript configuration for Angular developers."
-            },
-            {
+              "title": "Ρύθμιση TypeScript",
+              "tooltip": "Ρύθμιση της TypeScript για προγραμματιστές Angular."
+            }, {
               "url": "guide/aot-compiler",
               "title": "Ahead-of-Time Compilation",
               "tooltip": "Learn why and how to use the Ahead-of-Time (AOT) compiler."
-            },
-            {
+            }, {
               "url": "guide/deployment",
-              "title": "Deployment",
-              "tooltip": "Learn how to deploy your Angular app."
+              "title": "Δημοσίευση",
+              "tooltip": "Μάθετε πως να δημοσιεύσετε την Angular εφαρμογή σας."
             }
           ]
         },
 
         {
           "url": "guide/testing",
-          "title": "Testing",
-          "tooltip": "Techniques and practices for testing an Angular app."
+          "title": "Δοκιμή",
+          "tooltip": "Τεχνικές και πρακτικές για την δοκιμή μιας εφαρμογής Angular."
         },
 
         {
           "url": "guide/ts-to-js",
-          "title": "TypeScript to JavaScript",
-          "tooltip": "Convert Angular TypeScript examples into ES6 and ES5 JavaScript."
+          "title": "TypeScript σε JavaScript",
+          "tooltip": "Μετατρέψτε τα Angular TypeScript παραδείγματα σε ES6 και ES5 JavaScript."
         },
 
         {
-          "title": "Upgrading",
-          "tooltip": "Incrementally upgrade an AngularJS application to Angular.",
-          "children": [
-            {
-              "url": "guide/ajs-quick-reference",
-              "title": "AngularJS to Angular",
-              "tooltip": "Learn how AngularJS concepts and techniques map to Angular."
-            },
-            {
-              "url": "guide/upgrade",
-              "title": "Upgrading from AngularJS",
-              "tooltip": "Incrementally upgrade an AngularJS application to Angular."
-            }
-          ]
+          "title": "Αναβαθμίζοντας",
+          "tooltip": "Αναβάθμιση προς τα επάνω μια εφαρμογής AngularJS σε Angular.",
+          "children": [{
+            "url": "guide/ajs-quick-reference",
+            "title": "AngularJS σε Angular",
+            "tooltip": "Μάθετε πως οι ιδέες και τεχνικές του AngularJS χαρτογραφούνται στο Angular."
+          }, {
+            "url": "guide/upgrade",
+            "title": "Αναβάθμιση από το AngularJS",
+            "tooltip": "Αναβάθμιση προς τα επάνω μιας εφαρμογής AngularJS σε Angular."
+          }]
         },
 
         {
           "url": "guide/visual-studio-2015",
-          "title": "Visual Studio 2015 QuickStart",
-          "tooltip": "Use Visual Studio 2015 with the QuickStart files."
+          "title": "Γρήγορη Εκκίνηση για το Visual Studio 2015",
+          "tooltip": "Χρήση του Visual Studio 2015 με τα αρχεία γρήγορης εκκίνησης."
         },
 
         {
           "url": "guide/webpack",
-          "title": "Webpack: An Introduction",
-          "tooltip": "Create Angular applications with Webpack based tooling."
+          "title": "Webpack: Μια εισαγωγή",
+          "tooltip": "Δημιουργία εφαρμογών Angular βασισμένη στο εργαλείο Webpack."
         }
       ]
     },
 
     {
       "title": "API",
-      "tooltip": "Details of the Angular classes and values.",
+      "tooltip": "Λεπτομέρειες των κλάσεων του Angular και των τιμών.",
       "url": "api"
     },
 
     {
-      "title": "References",
-      "tooltip": "References on Angular usage and style.",
-      "children": [
-        {
+      "title": "Αναφορές",
+      "tooltip": "Αναφορές στην χρήση και του στιλ του Angular.",
+      "children": [{
           "url": "guide/change-log",
-          "title": "Change Log",
-          "tooltip": "An annotated history of recent documentation improvements."
+          "title": "Ιστορικό αλλαγών",
+          "tooltip": "Ένα ιστορικό των πρόσφατων βελτιώσεων της τεκμηρίωσης με σχόλια."
         },
 
         {
           "url": "guide/cheatsheet",
-          "title": "Cheat Sheet",
-          "tooltip": "A quick guide to common Angular coding techniques."
+          "title": "Σκονάκι",
+          "tooltip": "Ένας γρήγορος οδηγός στις κοινές τεχνικές προγραμματισμού του Angular."
         },
 
         {
           "url": "guide/glossary",
-          "title": "Glossary",
-          "tooltip": "Brief definitions of the most important words in the Angular vocabulary."
+          "title": "Γλωσσάρι",
+          "tooltip": "Σύντομοι ορισμοί των πιο σημαντικών λέξεων στο γλωσσάρι του Angular."
         },
 
         {
           "url": "guide/styleguide",
-          "title": "Style Guide",
-          "tooltip": "Write Angular with style."
+          "title": "Οδηγός μορφοποίησης",
+          "tooltip": "Γράψτε Angular με στιλ."
         }
       ]
     }
   ],
 
-  "Footer": [
-    {
-      "title": "Resources",
-      "children": [
-        {
-          "url": "about",
-          "title": "About",
-          "tooltip": "Angular contributors."
-        },
-        {
-          "url": "resources",
-          "title": "Resource Listing",
-          "tooltip": "Angular tools, training, and blogs from around the web."
-        },
-        {
-          "url": "presskit",
-          "title": "Press Kit",
-          "tooltip": "Press contacts, logos, and branding."
-        }
-      ]
-    },
-    {
-      "title": "Help",
-      "children": [
-        {
-          "url": "http://stackoverflow.com/questions/tagged/angular2",
-          "title": "Stack Overflow",
-          "tooltip": "Stack Overflow: where the community answers your technical Angular questions."
-        },
-        {
-          "url": "https://gitter.im/angular/angular",
-          "title": "Gitter",
-          "tooltip": "Chat about Angular with other birds of a feather."
-        },
-        {
-          "url": "https://github.com/angular/angular/issues",
-          "title": "Report Issues",
-          "tooltip": "Post issues and suggestions on github."
-        },
-        {
-          "url": "https://github.com/angular/code-of-conduct/blob/master/CODE_OF_CONDUCT.md",
-          "title": "Code of Conduct",
-          "tooltip": "Treating each other with respect."
-        }
-      ]
-    },
-    {
-      "title": "Community",
-      "children": [
-        {
-          "url": "events",
-          "title": "Events",
-          "tooltip": "Post issues and suggestions on github."
-        },
-        {
-          "url": "http://www.meetup.com/topics/angularjs/",
-          "title": "Meetups",
-          "tooltip": "Attend a meetup and learn from fellow developers."
-        },
-        {
-          "url": "https://twitter.com/angular",
-          "title": "Twitter",
-          "tooltip": "Twitter"
-        },
-        {
-          "url": "https://github.com/angular/angular",
-          "title": "GitHub",
-          "tooltip": "GitHub"
-        },
-        {
-          "url": "contribute",
-          "title": "Contribute",
-          "tooltip": "Contribute to Angular"
-        }
-      ]
-    },
-    {
-      "title": "Languages",
-      "children": [
-        {
-          "title": "中文版",
-          "url": "https://angular.cn/"
-        }
-      ]
-    }
-  ],
+  "Footer": [{
+    "title": "Πηγές",
+    "children": [{
+      "url": "about",
+      "title": "Σχετικά",
+      "tooltip": "Συνεισφέροντες στο Angular."
+    }, {
+      "url": "resources",
+      "title": "Λίστα πόρων",
+      "tooltip": "Εργαλεία για το Angular, εκπαίδευση, και ιστολόγια από όλο το διαδίκτυο."
+    }, {
+      "url": "presskit",
+      "title": "Press Kit",
+      "tooltip": "Press contacts, logos, and branding."
+    }]
+  }, {
+    "title": "Βοήθεια",
+    "children": [{
+      "url": "http://stackoverflow.com/questions/tagged/angular2",
+      "title": "Stack Overflow",
+      "tooltip": "Stack Overflow: εκεί που η κοινότητα απαντάει τις τεχνικές ερωτήσεις σας για το Angular."
+    }, {
+      "url": "https://gitter.im/angular/angular",
+      "title": "Gitter",
+      "tooltip": "Chat σχετικά με το Angular με άλλους προγραμματιστές."
+    }, {
+      "url": "https://github.com/angular/angular/issues",
+      "title": "Αναφορά Προβλημάτων",
+      "tooltip": "Δημοσιεύστε προβλήματα και προτάσεις στο github."
+    }, {
+      "url": "https://github.com/angular/code-of-conduct/blob/master/CODE_OF_CONDUCT.md",
+      "title": "Κώδικας δεοντολογίας",
+      "tooltip": "Συμπεριφερόμαστε σε όλους με σεβασμό."
+    }]
+  }, {
+    "title": "Κοινότητα",
+    "children": [{
+      "url": "events",
+      "title": "Εκδηλώσεις",
+      "tooltip": "Δημοσιεύστε προβλήματα και προτάσεις στο github."
+    }, {
+      "url": "http://www.meetup.com/topics/angularjs/",
+      "title": "Συναντήσεις",
+      "tooltip": "Παρακολουθήστε μια συνάντηση και μάθετε από συνεργάτες προγραμματιστές."
+    }, {
+      "url": "https://twitter.com/angular",
+      "title": "Twitter",
+      "tooltip": "Twitter"
+    }, {
+      "url": "https://github.com/angular/angular",
+      "title": "GitHub",
+      "tooltip": "GitHub"
+    }, {
+      "url": "contribute",
+      "title": "Συνεισφορά",
+      "tooltip": "Συνεισφορά στο Angular"
+    }]
+  }, {
+    "title": "Γλώσσες",
+    "children": [{
+      "title": "中文版",
+      "url": "https://angular.cn/"
+    }]
+  }],
 
-  "docVersions": [
-    { "title": "v2", "url": "https://v2.angular.io" }
-  ]
+  "docVersions": [{
+    "title": "v2",
+    "url": "https://v2.angular.io"
+  }]
 }

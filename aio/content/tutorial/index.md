@@ -1,105 +1,109 @@
 @title
-Tutorial: Tour of Heroes
+Μάθημα: Περιήγηση στους Ήρωες
 
 @intro
-The Tour of Heroes tutorial takes you through the steps of creating an Angular application in TypeScript.
+Η περιήγηση στο μάθημα Ήρωες σας πάει μέσω των βημάτων για την δημιουργία μιας εφαρμογής Angular με TypeScript.
 
 @description
 
 
 
-The grand plan for this tutorial is to build an app that helps a staffing agency manage its stable of heroes.
+Το κεντρικό πλάνο αυτού το μαθήματος είναι η ανάπτυξη μιας εφαρμογής που βοηθάει ένα γραφείο στελέχωσης
+να διαχειριστεί τους βασικούς της ήρωες.
 
-The Tour of Heroes app covers the core fundamentals of Angular. You'll build a basic app that
-has many of the features you'd expect to find in a full-blown, data-driven app: acquiring and displaying
-a list of heroes, editing a selected hero's detail, and navigating among different
-views of heroic data.
+Η περιήγηση στην εφαρμογή Ήρωες καλύπτει τα βασικά θεμελιώδη στοιχεία του Angular. Θα δημιουργήσετε μια βασική
+εφαρμογή που έχει πολλά από τα χαρακτηριστικά που περιμένετε να βρείτε σε μια ολοκληρωμένη, οδηγούμενη από δεδομένα
+εφαρμογή: απόκτηση και προβολή μιας λίστας με ήρωες, επεξεργασία των λεπτομερειών ενός ήρωα, και πλοήγηση μεταξύ των
+διαφορετικών προβολών των δεδομένων των ηρώων.
 
-You'll use built-in directives to show and hide elements and display lists of hero data.
-You'll create components to display hero details and show an array of heroes.
-You'll use one-way data binding for read-only data. You'll add editable fields to update a model
-with two-way data binding. You'll bind component methods to user events, like keystrokes and clicks.
-You'll enable users to select a hero from a master list and edit that hero in the details view. You'll
-format data with pipes. You'll create a shared service to assemble the heroes.
-And you'll use routing to navigate among different views and their components.
+Θα χρησιμοποιήσετε ενσωματωμένες οδηγίες για να εμφανίσετε και να κρύψετε στοιχεία και να εμφανίσετε λίστες με
+τα εδομένων των ηρώων.
+Θα δημιουργήσετε συστατικά ( Components ) για να προβάλετε τις λεπτομέρειες ενός ήρωα και για να εμφανίσετε ένα
+πίνακα με ήρωες.
+Θα χρησιμοποιήσετε σύνδεση δεδομένων μιας κατεύθυνσης μόνο για ανάγνωση δεδομένων. Θα εισάγετε επεξεργάσιμα πεδία
+για να ενημερώσετε ένα μοντέλο με σύνδεση δεδομένων δύο κατευθύνσεων.
+Θα συνδέσετε μεθόδους συστατικών με ενέργειες χρηστών, όπως πάτημα πλήκτρων και κλικ.
+Θα επιτρέψετε στους χρήστες να επιλέξουν ένα Ήρωα από μια κεντρική λίστα και να επεξεργασθούν τα στοιχεία του
+ήρωα σε μια προβολή λεπτομερειών του ήρωα.
+Θα μορφοποιήσετε δεδομένα με αγωγούς (pipes). Θα δημιουργήσετε μια διαμοιρασμένη υπηρεσία για την σύνθεση των ηρώων.
+Και θα χρησιμοποιήσετε δρομολόγηση ( routing ) για να πλοηγηθείτε μεταξύ των προβολών και των στοιχείων τους.
 <!-- CF: Should this be a bullet list? -->
 
-You'll learn enough core Angular to get started and gain confidence that
-Angular can do whatever you need it to do.
-You'll cover a lot of ground at an introductory level, and you'll find many links
-to pages with greater depth.
+Θα μάθετε αρκετά για το Angular για να αρχίσετε και να αποκτήσετε την αυτοπεποίθηση πως το Angular μπορεί να κάνει
+οτιδήποτε θέλετε να κάνει.
+Θα καλύψετε πολύ έδαφος σε ένα εισαγωγικό επίπεδο, και θα βρείτε πολλούς σύνδεσμους σε σελίδες με μεγαλύτερο βάθος.
 
-When you're done with this tutorial, the app will look like this <live-example name="toh-pt6"></live-example>.
-
+Όταν ολοκληρώσετε αυτό το μάθημα, η εφαρμογή σας θα μοιάζει σαν αυτή <live-example name="toh-pt6"></live-example>.
 
 
 
-## The end game
 
-Here's a visual idea of where this tutorial leads, beginning with the "Dashboard"
-view and the most heroic heroes:
+## Το παιχνίδι ολοκληρωμένο
+
+Εδώ είναι μια οπτική ιδέα για το που θα σας οδηγήσει αυτό το μάθημα, αρχίζοντας με την προβολή του "Πίνακα Ελέγχου"
+και τους ποιο ηρωικούς ήρωες:
 
 
 <figure>
-  <img src='generated/images/guide/toh/heroes-dashboard-1.png' alt="Output of heroes dashboard">
+  <img src='generated/images/guide/toh/heroes-dashboard-1.png' alt="Έξοδος του πίνακα ελέγχου των ηρώων">
 </figure>
 
 
 
-You can click the two links above the dashboard ("Dashboard" and "Heroes")
-to navigate between this Dashboard view and a Heroes view.
+Μπορείτε να κάνετε κλικ στους δυο σύνδεσμους πάνω από τον πίνακα ελέγχου ( "Πίνακας Ελέγχου" και "Ήρωες" ) για να
+πλοηγηθείτε μεταξύ των προβολών του Πίνακας Ελέγχου και της προβολής του Ήρωα.
 
-If you click the dashboard hero "Magneta," the router opens a "Hero Details" view
-where you can change the hero's name.
+Αν κάνετε κλικ στον ήρωα του πίνακα ελέγχου "Magneta", ο δρομολογητής ανοίγει την προβολή λεπτομερειών του ήρωα όπου
+μπορείτε να αλλάξετε το όνομα του ήρωα.
 
 
 <figure>
-  <img src='generated/images/guide/toh/hero-details-1.png' alt="Details of hero in app">
+  <img src='generated/images/guide/toh/hero-details-1.png' alt="Λεπτομέρειες του ήρωα στην εφαρμογή">
 </figure>
 
 
 
-Clicking the "Back" button returns you to the Dashboard.
-Links at the top take you to either of the main views.
-If you click "Heroes," the app displays the "Heroes" master list view.
+Αν κάνετε κλικ στο κουμπί "Back" θα επιστρέψετε στον πίνακα ελέγχου.
+Οι σύνδεσμοι στο επάνω μέρος σας πάνε σε οποιαδήποτε από τις κεντρικές προβολές.
+Αν κάνετε κλικ στο "Heroes", η εφαρμογή θα προβάλει την κεντρική προβολή των ηρώων.
 
 
 <figure>
-  <img src='generated/images/guide/toh/heroes-list-2.png' alt="Output of heroes list app">
+  <img src='generated/images/guide/toh/heroes-list-2.png' alt="Η έξοδος της λίστας των ηρώων">
 </figure>
 
 
 
-When you click a different hero name, the read-only mini detail beneath the list reflects the new choice.
+Όταν κάνετε κλικ σε διαφορετικά ονόματα ηρώων, η μόνο προς ανάγνωση μικρές λεπτομέρειες κάτω από την λίστα αντανακλούν
+την νέα επιλογή.
 
-You can click the "View Details" button to drill into the
-editable details of the selected hero.
+Μπορείτε να κάνετε κλικ στο πλήκτρο "View Details" για να εντρυφήσετε στις επεξεργάσιμες πληροφορίες του
+επιλεγμένου ήρωα.
 
-The following diagram captures all of the navigation options.
+Το ακόλουθο διάγραμμα αναπαριστά όλες τις επιλογές πλοήγησης.
 
 
 <figure>
-  <img src='generated/images/guide/toh/nav-diagram.png' alt="View navigations">
+  <img src='generated/images/guide/toh/nav-diagram.png' alt="Εμφάνιση πλοηγήσεων">
 </figure>
 
 
 
-Here's the app in action:
+Εδώ είναι η εφαρμογή σε δράση:
 
 
 <figure>
-  <img src='generated/images/guide/toh/toh-anim.gif' alt="Tour of Heroes in Action">
+  <img src='generated/images/guide/toh/toh-anim.gif' alt="Πλοήγηση στους Ήρωες εν δράση">
 </figure>
 
 
 
 
-## Up next
+## Στη συνέχεια
 
-You'll build the Tour of Heroes app, step by step.
-Each step is motivated with a requirement that you've likely
-met in many applications. Everything has a reason.
+Θα δημιουργήσετε βήμα βήμα, την εφαρμογή πλοήγηση στους ήρωες.
+Κάθε βήμα έχει ως κίνητρο απαιτήσεις που έχετε συναντήσει σε πολλές εφαρμογές. Τα πάντα έχουν ένα σκοπό.
 
-Along the way, you'll become familiar with many of the core fundamentals of Angular.
+Κατά τη διάρκεια ανάπτυξης, θα εξοικειωθείτε με πολλά από τα βασικά συστατικά του Angular.
 
-Start now by building a simple [hero editor](tutorial/toh-pt1 "The Hero Editor").
+Αρχίστε τώρα την απλή εφαρμογή [επεξεργαστής Ηρώων](tutorial/toh-pt1 "Ο επεξεργαστής Ηρώων").
